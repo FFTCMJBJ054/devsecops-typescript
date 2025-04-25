@@ -113,7 +113,6 @@ jobs:
           images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
           tags: |
             ${{ steps.set_output.outputs.image_tag }}
-            latest
       
       - name: Build Docker image
         uses: docker/build-push-action@v5
